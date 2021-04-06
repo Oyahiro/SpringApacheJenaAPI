@@ -1,0 +1,777 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#"
+     xml:base="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#correspondeAspirante -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#correspondeAspirante">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#realizaPostulacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esCarreraDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esCarreraDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneCarrera"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esExamenDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esExamenDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneExamen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esNotaDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esNotaDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneNota"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esPostulacionDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esPostulacionDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tienePostulacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Universidad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esRegistroDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esRegistroDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneRegistro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esResultadoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#esResultadoDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneResultado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#realizaPostulacion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#realizaPostulacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneCarrera -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneCarrera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Universidad"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Carrera"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneExamen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneExamen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneNota -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneNota">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NotaExamen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tienePostulacion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tienePostulacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneRegistro -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneRegistro">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RegistroExamen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneResultado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#tieneResultado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ResultadoPostulación"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#aceptaCupo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#aceptaCupo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ResultadoPostulación"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#apellidoAspirante -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#apellidoAspirante">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#calificacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#calificacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NotaExamen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#cantidadCupos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#cantidadCupos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Carrera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#cedulaAspirante -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#cedulaAspirante">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ciudadUniversidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ciudadUniversidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Universidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#codigoNota -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#codigoNota">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NotaExamen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#codigoRegistro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#codigoRegistro">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RegistroExamen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#contactoCarrera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#contactoCarrera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Carrera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#cupoNumero -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#cupoNumero">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ResultadoPostulación"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#direccionAspirante -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#direccionAspirante">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#fechaExamen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#fechaExamen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#fechaPostulacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#fechaPostulacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#fechaRegistro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#fechaRegistro">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RegistroExamen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#horaFinExamen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#horaFinExamen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#horaFinPostulacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#horaFinPostulacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#horaInicioExamen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#horaInicioExamen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#horaInicioPostulacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#horaInicioPostulacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#nombreAspirante -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#nombreAspirante">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#nombreCarrera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#nombreCarrera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Carrera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#nombreUniversidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#nombreUniversidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Universidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#telefonoAspirante -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#telefonoAspirante">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#teléfonoUniversidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#teléfonoUniversidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Universidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Carrera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Carrera"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NotaExamen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NotaExamen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RegistroExamen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RegistroExamen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ResultadoPostulación -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ResultadoPostulación"/>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Universidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Universidad"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <realizaPostulacion rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS1"/>
+        <tieneExamen rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA1"/>
+        <tieneRegistro rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG1"/>
+        <apellidoAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chunga</apellidoAspirante>
+        <cedulaAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0941106445</cedulaAspirante>
+        <direccionAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malecon y Alvarado</direccionAspirante>
+        <nombreAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christian</nombreAspirante>
+        <telefonoAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0963179218</telefonoAspirante>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <realizaPostulacion rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS2"/>
+        <tieneExamen rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA2"/>
+        <tieneRegistro rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG2"/>
+        <apellidoAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chunga</apellidoAspirante>
+        <cedulaAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0941106452</cedulaAspirante>
+        <direccionAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juan Montalvo Y Camilo Ponce</direccionAspirante>
+        <nombreAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christopher</nombreAspirante>
+        <telefonoAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0941578469</telefonoAspirante>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <realizaPostulacion rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS3"/>
+        <tieneExamen rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA3"/>
+        <tieneRegistro rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG3"/>
+        <apellidoAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zambrano</apellidoAspirante>
+        <cedulaAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17512885205</cedulaAspirante>
+        <direccionAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camilo Estrada Y Latacunga</direccionAspirante>
+        <nombreAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paola</nombreAspirante>
+        <telefonoAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0963597418</telefonoAspirante>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Aspirante"/>
+        <realizaPostulacion rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS4"/>
+        <tieneExamen rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA4"/>
+        <tieneRegistro rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG4"/>
+        <apellidoAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velasco</apellidoAspirante>
+        <cedulaAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1579426852</cedulaAspirante>
+        <direccionAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juan Erazo Y Dubai</direccionAspirante>
+        <nombreAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Katherin</nombreAspirante>
+        <telefonoAspirante rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0952858564</telefonoAspirante>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#CAR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#CAR1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Carrera"/>
+        <esCarreraDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#UNI1"/>
+        <cantidadCupos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</cantidadCupos>
+        <contactoCarrera rdf:datatype="http://www.w3.org/2001/XMLSchema#string">05-3648751</contactoCarrera>
+        <nombreCarrera rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingeniería en Software</nombreCarrera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#CAR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#CAR2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Carrera"/>
+        <esCarreraDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#UNI1"/>
+        <cantidadCupos rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</cantidadCupos>
+        <contactoCarrera rdf:datatype="http://www.w3.org/2001/XMLSchema#string">05-1469315</contactoCarrera>
+        <nombreCarrera rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Finanzas y Auditoría</nombreCarrera>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen"/>
+        <esExamenDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP1"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT1"/>
+        <fechaExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-15</fechaExamen>
+        <horaFinExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11:00</horaFinExamen>
+        <horaInicioExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">09:00</horaInicioExamen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen"/>
+        <esExamenDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP2"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT2"/>
+        <fechaExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-15</fechaExamen>
+        <horaInicioExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">09:00</horaInicioExamen>
+        <horaInicioExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11:00</horaInicioExamen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen"/>
+        <esExamenDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP3"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT3"/>
+        <fechaExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-15</fechaExamen>
+        <horaFinExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17:00</horaFinExamen>
+        <horaInicioExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15:00</horaInicioExamen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Examen"/>
+        <esExamenDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP4"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT4"/>
+        <fechaExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-15</fechaExamen>
+        <horaFinExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17:00</horaFinExamen>
+        <horaInicioExamen rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15:00</horaInicioExamen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NotaExamen"/>
+        <esNotaDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA1"/>
+        <calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</calificacion>
+        <codigoNota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAES_PRIMERO_NOTA_09-125</codigoNota>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NotaExamen"/>
+        <esNotaDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA2"/>
+        <calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">84</calificacion>
+        <codigoNota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAES_PRIMERO_NOTA_11-95</codigoNota>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NotaExamen"/>
+        <esNotaDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA3"/>
+        <calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">98</calificacion>
+        <codigoNota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAES_PRIMERO_NOTA_12-359</codigoNota>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NOT4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#NotaExamen"/>
+        <esNotaDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#EXA4"/>
+        <calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">74</calificacion>
+        <codigoNota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAES_PRIMERO_NOTA_01-45</codigoNota>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+        <correspondeAspirante rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP1"/>
+        <esPostulacionDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#UNI1"/>
+        <tieneResultado rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES1"/>
+        <fechaPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-01</fechaPostulacion>
+        <horaFinPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20:00</horaFinPostulacion>
+        <horaInicioPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">09:00</horaInicioPostulacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+        <correspondeAspirante rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP2"/>
+        <esPostulacionDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#UNI1"/>
+        <tieneResultado rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES2"/>
+        <fechaPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-02</fechaPostulacion>
+        <horaFinPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20:00</horaFinPostulacion>
+        <horaInicioPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">09:00</horaInicioPostulacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+        <correspondeAspirante rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP3"/>
+        <esPostulacionDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#UNI1"/>
+        <tieneResultado rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES3"/>
+        <fechaPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-03</fechaPostulacion>
+        <horaFinPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20:00</horaFinPostulacion>
+        <horaInicioPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">09:00</horaInicioPostulacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Postulacion"/>
+        <correspondeAspirante rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP4"/>
+        <esPostulacionDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#UNI1"/>
+        <tieneResultado rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES4"/>
+        <fechaPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-02</fechaPostulacion>
+        <horaFinPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20:00</horaFinPostulacion>
+        <horaInicioPostulacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">09:00</horaInicioPostulacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RegistroExamen"/>
+        <esRegistroDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP1"/>
+        <codigoRegistro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAES_PRIMERO_21_09-125</codigoRegistro>
+        <fechaRegistro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-01</fechaRegistro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RegistroExamen"/>
+        <esRegistroDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP2"/>
+        <codigoRegistro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAES_PRIMERO_21_11-95</codigoRegistro>
+        <fechaRegistro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-01</fechaRegistro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RegistroExamen"/>
+        <esRegistroDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP3"/>
+        <codigoRegistro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAES_PRIMERO_21_12-359</codigoRegistro>
+        <fechaRegistro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-02</fechaRegistro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#REG4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RegistroExamen"/>
+        <esRegistroDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ASP4"/>
+        <codigoRegistro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EAES_PRIMERO_21_01-45</codigoRegistro>
+        <fechaRegistro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-02</fechaRegistro>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ResultadoPostulación"/>
+        <esResultadoDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS1"/>
+        <aceptaCupo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</aceptaCupo>
+        <cupoNumero rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</cupoNumero>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ResultadoPostulación"/>
+        <esResultadoDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS2"/>
+        <aceptaCupo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</aceptaCupo>
+        <cupoNumero rdf:datatype="http://www.w3.org/2001/XMLSchema#int">25</cupoNumero>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ResultadoPostulación"/>
+        <esResultadoDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS3"/>
+        <aceptaCupo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</aceptaCupo>
+        <cupoNumero rdf:datatype="http://www.w3.org/2001/XMLSchema#int">65</cupoNumero>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#RES4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#ResultadoPostulación"/>
+        <esResultadoDe rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS4"/>
+        <aceptaCupo rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</aceptaCupo>
+        <cupoNumero rdf:datatype="http://www.w3.org/2001/XMLSchema#int">71</cupoNumero>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#UNI1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#UNI1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#Universidad"/>
+        <tieneCarrera rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#CAR1"/>
+        <tieneCarrera rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#CAR2"/>
+        <tienePostulacion rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS1"/>
+        <tienePostulacion rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS2"/>
+        <tienePostulacion rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS3"/>
+        <tienePostulacion rdf:resource="http://www.semanticweb.org/chris/ontologies/2021/3/topicos-especiales-software#POS4"/>
+        <ciudadUniversidad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latacunga</ciudadUniversidad>
+        <nombreUniversidad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Universidad de las Fuerzas Armadas</nombreUniversidad>
+        <teléfonoUniversidad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">05-2015698</teléfonoUniversidad>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
